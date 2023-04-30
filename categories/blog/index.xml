@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on skimo.cat | Esquí de muntanya al Pirineu</title>
+    <link>https://skimo.cat/categories/blog/</link>
+    <description>Recent content in Blog on skimo.cat | Esquí de muntanya al Pirineu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ca</language>
+    <lastBuildDate>Sat, 26 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://skimo.cat/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://skimo.cat/blog/</link>
+      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://skimo.cat/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rutes fàcils d&#39;esquí de muntanya a la Cerdanya</title>
+      <link>https://skimo.cat/blog/rutes-iniciacio-esqui-de-muntanya-cerdanya/</link>
+      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://skimo.cat/blog/rutes-iniciacio-esqui-de-muntanya-cerdanya/</guid>
+      <description>&lt;p&gt;Un dels problemes principals a l&amp;rsquo;hora d&amp;rsquo;iniciar-se a l&amp;rsquo;esqui de muntanya és el de triar unes rutes adequades, que siguin senzilles i segures. En aquesta entrada es presenten diverses rutes aptes per a principiants. Tingueu en compte que, tot i triar llocs amb poc compromís, sempre s&amp;rsquo;ha de dur el material de seguretat (DVA, pala i sonda) i saber utilitzar-lo.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
