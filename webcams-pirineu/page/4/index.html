@@ -52,7 +52,7 @@ if (!doNotTrack) {
 	<div class="logo">
 		<a class="logo__link" href="/" title="skimo.cat | Esquí de muntanya al Pirineu" rel="home">
 			<div class="logo__item logo__imagebox">
-					<img class="logo__img" src="/img/banner-logo.png">
+					<img class="logo__img" src="/img/banner-logo-min.png">
 				</div>
 
 		</a>
@@ -122,7 +122,7 @@ if (!doNotTrack) {
 
 <div style="padding-bottom: 10px;">
     <label for="webcams">Webcam:</label>
-    <select name="webcams" id="wc-selector" value=guils onchange="selectWC(this.value)">
+    <select name="webcams" id="wc-selector" value=aneto-montarto onchange="selectWC(this.value)">
 
     </select>
 </div>
@@ -135,7 +135,7 @@ if (!doNotTrack) {
   </div>
 
 <script>
-const WC_BASE_DOMAIN = 'https://img.skimo.cat/';
+const WC_BASE_DOMAIN = 'https://backend.skimo.cat/';
 const WC_DATA_URL = WC_BASE_DOMAIN + '/img/data.json';
 var selected_wc = undefined;
 
@@ -190,8 +190,8 @@ function loadWebcams() {
 		}
         document.getElementById('wc-selector').innerHTML = wc_selector_html;
         
-        selectWC("guils");
-        document.getElementById('wc-selector').value = "guils";
+        selectWC("aneto-montarto");
+        document.getElementById('wc-selector').value = "aneto-montarto";
         
 
 	})
@@ -235,6 +235,58 @@ function selectWC(name) {
 </script>
 
 	</div><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/webcams-pirineu/porte-estanyol/" rel="bookmark">
+			Webcam Porté-Puymorens (Arribada Estanyol)
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/webcams-pirineu/porte-la-vignole/" rel="bookmark">
+			Webcam Porté-Puymorens (La Vignole)
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/webcams-pirineu/porte-le-village/" rel="bookmark">
+			Webcam Porté-Puymorens (Le Village)
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/webcams-pirineu/coma-de-vaca/" rel="bookmark">
+			Webcam Refugi coma de Vaca
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		
+	</div>
+</article><article class="list__item post">
 	
 	<header class="list__header">
 		<h2 class="list__title post__title">
@@ -290,8 +342,8 @@ function selectWC(name) {
 	
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/webcams-pirineu/jm-blanc/" rel="bookmark">
-			Webcam Refugi JM Blanc (2350)
+			<a href="/webcams-pirineu/jmblanc-ne/" rel="bookmark">
+			Webcam Refugi Josep Maria Blanc Nord-Est (2350m)
 			</a>
 		</h2>
 		
@@ -303,60 +355,8 @@ function selectWC(name) {
 	
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/webcams-pirineu/montgarri/" rel="bookmark">
-			Webcam Refugi Montgarri
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/webcams-pirineu/niu-aliga/" rel="bookmark">
-			Webcam Refugi Niu l&#39;Àliga
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/webcams-pirineu/tavascan/" rel="bookmark">
-			Webcam Tavascan
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/webcams-pirineu/torrent-negre-molina/" rel="bookmark">
-			Webcam Torrent Negre (La Molina)
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/webcams-pirineu/vallter/" rel="bookmark">
-			Webcam Vallter (2500)
+			<a href="/webcams-pirineu/jmblanc/" rel="bookmark">
+			Webcam Refugi Josep Maria Blanc Sud-Oest (2350m)
 			</a>
 		</h2>
 		
@@ -369,7 +369,8 @@ function selectWC(name) {
 
 <div class="pagination">
 	<a class="pagination__item pagination__item--prev btn" href="/webcams-pirineu/page/3/">«</a>
-	<span class="pagination__item pagination__item--current">4/4</span>
+	<span class="pagination__item pagination__item--current">4/5</span>
+	<a class="pagination__item pagination__item--next btn" href="/webcams-pirineu/page/5/">»</a>
 </div>
 
 			</div>

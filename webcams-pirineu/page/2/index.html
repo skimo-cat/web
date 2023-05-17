@@ -52,7 +52,7 @@ if (!doNotTrack) {
 	<div class="logo">
 		<a class="logo__link" href="/" title="skimo.cat | Esquí de muntanya al Pirineu" rel="home">
 			<div class="logo__item logo__imagebox">
-					<img class="logo__img" src="/img/banner-logo.png">
+					<img class="logo__img" src="/img/banner-logo-min.png">
 				</div>
 
 		</a>
@@ -122,7 +122,7 @@ if (!doNotTrack) {
 
 <div style="padding-bottom: 10px;">
     <label for="webcams">Webcam:</label>
-    <select name="webcams" id="wc-selector" value=guils onchange="selectWC(this.value)">
+    <select name="webcams" id="wc-selector" value=aneto-montarto onchange="selectWC(this.value)">
 
     </select>
 </div>
@@ -135,7 +135,7 @@ if (!doNotTrack) {
   </div>
 
 <script>
-const WC_BASE_DOMAIN = 'https://img.skimo.cat/';
+const WC_BASE_DOMAIN = 'https://backend.skimo.cat/';
 const WC_DATA_URL = WC_BASE_DOMAIN + '/img/data.json';
 var selected_wc = undefined;
 
@@ -190,8 +190,8 @@ function loadWebcams() {
 		}
         document.getElementById('wc-selector').innerHTML = wc_selector_html;
         
-        selectWC("guils");
-        document.getElementById('wc-selector').value = "guils";
+        selectWC("aneto-montarto");
+        document.getElementById('wc-selector').value = "aneto-montarto";
         
 
 	})
@@ -235,6 +235,45 @@ function selectWC(name) {
 </script>
 
 	</div><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/webcams-pirineu/formigueres-estacio/" rel="bookmark">
+			Webcam Formigueres (estació)
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/webcams-pirineu/glaciar-aneto/" rel="bookmark">
+			Webcam Glaciar de l&#39;Aneto
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/webcams-pirineu/grandvalira-grau-roig/" rel="bookmark">
+			Webcam Grandvalira - Grau Roig
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		
+	</div>
+</article><article class="list__item post">
 	
 	<header class="list__header">
 		<h2 class="list__title post__title">
@@ -325,51 +364,12 @@ function selectWC(name) {
 	<div class="content list__excerpt post__content clearfix">
 		
 	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/webcams-pirineu/mijanes-pistes/" rel="bookmark">
-			Webcam Mijanès (pistes)
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/webcams-pirineu/parking-beret/" rel="bookmark">
-			Webcam Parking Beret (1800)
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/webcams-pirineu/pas-de-la-casa/" rel="bookmark">
-			Webcam Pas de la Casa
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
-	</div>
 </article>
 </main>
 
 <div class="pagination">
 	<a class="pagination__item pagination__item--prev btn" href="/webcams-pirineu/">«</a>
-	<span class="pagination__item pagination__item--current">2/4</span>
+	<span class="pagination__item pagination__item--current">2/5</span>
 	<a class="pagination__item pagination__item--next btn" href="/webcams-pirineu/page/3/">»</a>
 </div>
 
