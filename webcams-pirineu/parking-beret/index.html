@@ -17,7 +17,7 @@
 		<meta itemprop="name" content="Webcam Parking Beret (1800)">
 <meta itemprop="description" content="Consulta les ultimes 24h de la webcam Parking Beret (1800)!"><meta itemprop="datePublished" content="2022-04-29T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-04-29T00:00:00+00:00" />
-<meta itemprop="wordCount" content="2">
+<meta itemprop="wordCount" content="14">
 <meta itemprop="keywords" content="" />
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Webcam Parking Beret (1800)"/>
@@ -56,7 +56,7 @@ if (!doNotTrack) {
 	<div class="logo">
 		<a class="logo__link" href="/" title="skimo.cat | Esquí de muntanya al Pirineu" rel="home">
 			<div class="logo__item logo__imagebox">
-					<img class="logo__img" src="/img/banner-logo-min.png">
+					<img class="logo__img" src="/img/banner-logo-min.png" alt="Logo">
 				</div>
 
 		</a>
@@ -124,7 +124,42 @@ if (!doNotTrack) {
 			
 		</header>
 		<div class="content post__content clearfix">
-			<div style="padding-bottom: 10px;">
+			<style type="text/css">
+.share-btn-wc {
+    background-color: #e8e8e8;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px 1em 5px 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+     
+    width: 100%;
+    max-width: 250px;
+     
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.share-btn-wc > i {
+    margin-left: 4%;
+    font-weight: 300;
+}
+
+.share-btn-wc > img {
+    height: 5%;
+    max-height: 40px;
+    width: auto;
+}
+
+.share-btn-wc > img,
+.share-btn-wc > i {
+  vertical-align: middle;
+}
+</style>
+
+<div style="padding-bottom: 10px;">
     <label for="webcams">Webcam:</label>
     <select name="webcams" id="wc-selector" value=parking-beret onchange="selectWC(this.value)">
 
@@ -136,7 +171,26 @@ if (!doNotTrack) {
     <img id="wc-img" onLoad="document.getElementById('wc-spinner').style.display = 'none'; this.style.display = 'block'" onerror="document.getElementById('wc-error-message').style.display = 'inline'; document.getElementById('wc-spinner').style.display = 'none';" style="display: none;" src="">
     <input id="wc-range" style="width: 100%;" type="range" min=0 max=0 step=1 value=0 oninput="updateWCImage()" onchange="updateWCImage()"><br>
     <p id="wc-footer"><span id="wc-date"></span><span  style="float:right;margin-top:0;">Font: <span id="wc-attribution"></span></span></p>
-  </div>
+</div>
+
+<div>
+    <button class="share-btn-wc" onclick="shareOnWhatsApp()" title="Comparteix a WhatsApp">
+        <img src="/img/whatsapp.svg" />
+        <i class="fab fa-whatsapp">Comparteix a WhatsApp</i>
+    </button>
+    <button class="share-btn-wc" onclick="shareOnTelegram()" title="Comparteix a Telegram">
+        <img src="/img/telegram.svg" />
+        <i class="fab fa-telegram-plane">Comparteix a Telegram</i>
+    </button>
+    <button class="share-btn-wc" onclick="window.open('https://twitter.com/intent/tweet?text=Mira la webcam a ' + ((selected_wc.original_name !== undefined) ? selected_wc.original_name : &#34;parking-beret&#34;) + ':%20'  + encodeURIComponent(window.location.href), 'twitter-share-dialog', 'width=626,height=436'); return false;" title="Comparteix a Twitter">
+        <img src="/img/twitter.svg" />
+        <i class="fab fa-twitter">Comparteix a twitter</i>
+    </button>
+    <button class="share-btn-wc" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href) + '&t=' + encodeURIComponent(document.title), 'facebook-share-dialog', 'width=626,height=436'); return false;" title="Comparteix a Facebook">
+        <img src="/img/facebook.svg" />
+        <i class="fab fa-facebook-f">Comparteix a facebook</i>
+    </button> 
+</div>
 
 <script>
 const WC_BASE_DOMAIN = 'https://backend.skimo.cat/';
@@ -236,6 +290,32 @@ function selectWC(name) {
         }
     }
 }
+</script>
+
+<script>
+    function shareOnWhatsApp() {
+    if (selected_wc === undefined) {
+        return;
+    }
+
+    let location = window.location.origin + '/webcams-pirineu/' + selected_wc.name;
+
+    var whatsappUrl = 'whatsapp://send?text=' + encodeURIComponent('Mira la webcam a ') + encodeURIComponent(selected_wc.original_name) + ' ' + encodeURIComponent(location) + '&nbsp;';
+
+    window.open(whatsappUrl, '_blank');
+  }
+
+  function shareOnTelegram() {
+    if (selected_wc === undefined) {
+        return;
+    }
+
+    let location = window.location.origin + '/webcams-pirineu/' + selected_wc.name;
+
+    var telegramUrl = 'https://t.me/share/url?url=' + encodeURIComponent(location) + '&text=' + encodeURIComponent('Mira la webcam a ') + encodeURIComponent(selected_wc.original_name) + '&nbsp;';
+
+    window.open(telegramUrl, '_blank');
+  }
 </script>
 		</div>
 	</article>

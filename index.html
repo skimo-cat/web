@@ -53,7 +53,7 @@ if (!doNotTrack) {
 	<div class="logo">
 		<a class="logo__link" href="/" title="skimo.cat | Esquí de muntanya al Pirineu" rel="home">
 			<div class="logo__item logo__imagebox">
-					<img class="logo__img" src="/img/banner-logo-min.png">
+					<img class="logo__img" src="/img/banner-logo-min.png" alt="Logo">
 				</div>
 
 		</a>
@@ -117,7 +117,7 @@ if (!doNotTrack) {
 <main class="main list" role="main">
 	<div class="content main__content clearfix">
 		<h2 id="benvinguts-a-skimocat">Benvinguts a skimo.cat</h2>
-<p>skimo.cat és un projecte personal que va neixer amb la intenció de recopilar tota la informació rellevant per l&rsquo;esqui de muntanya a un sol lloc (perill d&rsquo;allaus, rutes, meteo, innivació, webcams, refugis&hellip;). Aquesta informació es presenta en un mapa, que t&rsquo;ajuda a triar la teva pròxima activitat!</p>
+<p>skimo.cat és un projecte que recopila la informació més rellevant per l&rsquo;esquí de muntanya i alpinisme a un sol lloc (perill d&rsquo;allaus, rutes, meteo, innivació, webcams, refugis&hellip;). Aquesta informació es presenta en un mapa, que t&rsquo;ajuda a triar la teva pròxima activitat!</p>
 <p>Cal tenir en compte que les rutes i altra informació exposada al mapa és només una referència, quan us decidiu per una ruta, informeu-vos bé sobre el track, meteo, condicions de la neu i perill d&rsquo;allaus.</p>
 
 
@@ -127,8 +127,7 @@ if (!doNotTrack) {
 
 <style>
 a.markdown-btn {
-  margin-left: 40%;
-  margin-right: auto;
+   
   font-size: inherit;
   font-family: inherit;
   color: var(--font-color);
@@ -140,12 +139,24 @@ a.markdown-btn {
   border: none;
   cursor: pointer;
 
-  &:hover,
-  &:active {
-    text-decoration: none;
-    background-color: var(--primary-color);
-    color: var(--bg-color);
-  }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+
+   
+   
+}
+
+a.markdown-btn:active {
+  background-color: #bbbbbb;
+  color: var(--bg-color);
+}
+
+a.markdown-btn:hover {
+  text-decoration: none;
+  background-color: #bbbbbb;
+  color: var(--bg-color);
 }
 
 </style>
