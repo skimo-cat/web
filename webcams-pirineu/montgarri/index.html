@@ -182,11 +182,11 @@ if (!doNotTrack) {
         <img src="/img/telegram.svg" />
         <i class="fab fa-telegram-plane">Comparteix a Telegram</i>
     </button>
-    <button class="share-btn-wc" onclick="window.open('https://twitter.com/intent/tweet?text=Mira la webcam a ' + ((selected_wc.original_name !== undefined) ? selected_wc.original_name : &#34;montgarri&#34;) + ':%20'  + encodeURIComponent(window.location.href), 'twitter-share-dialog', 'width=626,height=436'); return false;" title="Comparteix a Twitter">
+    <button class="share-btn-wc" onclick="window.open('https://twitter.com/intent/tweet?text=Mira la webcam a ' + ((selected_wc.original_name !== undefined) ? selected_wc.original_name : &#34;montgarri&#34;) + ':%20'  + encodeURIComponent(getCurrentWCURI()), 'twitter-share-dialog', 'width=626,height=436'); return false;" title="Comparteix a Twitter">
         <img src="/img/twitter.svg" />
         <i class="fab fa-twitter">Comparteix a twitter</i>
     </button>
-    <button class="share-btn-wc" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href) + '&t=' + encodeURIComponent(document.title), 'facebook-share-dialog', 'width=626,height=436'); return false;" title="Comparteix a Facebook">
+    <button class="share-btn-wc" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(getCurrentWCURI()) + '&t=' + encodeURIComponent(document.title), 'facebook-share-dialog', 'width=626,height=436'); return false;" title="Comparteix a Facebook">
         <img src="/img/facebook.svg" />
         <i class="fab fa-facebook-f">Comparteix a facebook</i>
     </button> 
@@ -293,12 +293,20 @@ function selectWC(name) {
 </script>
 
 <script>
+    function getCurrentWCURI() {
+        if (selected_wc === undefined) {
+        return window.location.href;
+        }
+        let location = window.location.origin + '/webcams-pirineu/' + selected_wc.name;
+        return location;
+    }
+
     function shareOnWhatsApp() {
     if (selected_wc === undefined) {
         return;
     }
 
-    let location = window.location.origin + '/webcams-pirineu/' + selected_wc.name;
+    let location = getCurrentWCURI();
 
     var whatsappUrl = 'whatsapp://send?text=' + encodeURIComponent('Mira la webcam a ') + encodeURIComponent(selected_wc.original_name) + ' ' + encodeURIComponent(location) + '&nbsp;';
 
@@ -310,7 +318,7 @@ function selectWC(name) {
         return;
     }
 
-    let location = window.location.origin + '/webcams-pirineu/' + selected_wc.name;
+    let location = getCurrentWCURI();
 
     var telegramUrl = 'https://t.me/share/url?url=' + encodeURIComponent(location) + '&text=' + encodeURIComponent('Mira la webcam a ') + encodeURIComponent(selected_wc.original_name) + '&nbsp;';
 
