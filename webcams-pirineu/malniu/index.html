@@ -11,13 +11,13 @@
 <meta property="og:description" content="Consulta les ultimes 24h de la webcam Refugi de Malniu!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://skimo.cat/webcams-pirineu/malniu/" /><meta property="article:section" content="webcams-pirineu" />
-<meta property="article:published_time" content="2022-04-29T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-04-29T00:00:00+00:00" />
+<meta property="article:published_time" content="2022-06-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-06-30T00:00:00+00:00" />
 
 		<meta itemprop="name" content="Webcam Refugi de Malniu">
-<meta itemprop="description" content="Consulta les ultimes 24h de la webcam Refugi de Malniu!"><meta itemprop="datePublished" content="2022-04-29T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-04-29T00:00:00+00:00" />
-<meta itemprop="wordCount" content="14">
+<meta itemprop="description" content="Consulta les ultimes 24h de la webcam Refugi de Malniu!"><meta itemprop="datePublished" content="2022-06-30T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-06-30T00:00:00+00:00" />
+<meta itemprop="wordCount" content="16">
 <meta itemprop="keywords" content="" />
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Webcam Refugi de Malniu"/>
@@ -124,7 +124,9 @@ if (!doNotTrack) {
 			
 		</header>
 		<div class="content post__content clearfix">
-			<style type="text/css">
+			<p>
+
+<style type="text/css">
 .share-btn-wc {
     background-color: #e8e8e8;
     color: rgb(0, 0, 0);
@@ -250,6 +252,9 @@ function loadWebcams() {
         selectWC("malniu");
         document.getElementById('wc-selector').value = "malniu";
         
+        if (selectWCRelated !== undefined) {
+            selectWCRelated();
+        }
 
 	})
 	.catch(err => {
@@ -257,6 +262,7 @@ function loadWebcams() {
         throw err;
     });
 }
+selectWCRelated = undefined;
 loadWebcams();
 
 function selectWC(name) {
@@ -324,6 +330,106 @@ function selectWC(name) {
     window.open(telegramUrl, '_blank');
   }
 </script>
+
+
+
+
+<style type="text/css">
+.FlexContainer {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.FlexContainer div {
+    padding: 5px;
+    width: 30%;
+    height: auto;
+     
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.wc-title-related {
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-size: medium;
+    margin-bottom: 5%;
+}
+</style>
+
+<section class="related-wcs">
+    <h2>Webcams properes</h2>
+    <div class='FlexContainer'>
+        <div id="wc-overlay">
+            
+            <a href="/webcams-pirineu/guils"><h3 class="wc-title-related" id="wc-title-related-1"></h2></a>
+            <a href="/webcams-pirineu/guils"><img id="wc-img-related-1" src=""></a>
+            
+        </div>
+        <div id="wc-overlay">
+            
+            <a href="/webcams-pirineu/lles"><h3 class="wc-title-related" id="wc-title-related-2"></h2></a>
+            <a href="/webcams-pirineu/lles"><img id="wc-img-related-2" src=""></a>
+            
+        </div>
+        <div id="wc-overlay">
+            
+            <a href="/webcams-pirineu/niu-aliga"><h3 class="wc-title-related" id="wc-title-related-3"></h2></a>
+            <a href="/webcams-pirineu/niu-aliga"><img id="wc-img-related-3" src=""></a>
+            
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+function selectWCRelated() {
+    for (let i=0; i<webcams_data.length; i++) {
+        let curr_wc = webcams_data[i];
+        
+        if (curr_wc.name === "guils") {
+        
+            let initial_url = WC_BASE_DOMAIN + curr_wc.imgs[curr_wc.imgs.length-1].path;
+            if (document.getElementById("wc-img-related-1").src !== initial_url) {
+                document.getElementById("wc-img-related-1").src = initial_url;
+                document.getElementById("wc-img-related-1").alt = 'Webcam ' + curr_wc.original_name;
+            }
+            document.getElementById("wc-title-related-1").innerHTML = curr_wc.original_name;
+        }
+        
+        if (curr_wc.name === "lles") {
+        
+            let initial_url = WC_BASE_DOMAIN + curr_wc.imgs[curr_wc.imgs.length-1].path;
+            if (document.getElementById("wc-img-related-2").src !== initial_url) {
+                document.getElementById("wc-img-related-2").src = initial_url;
+                document.getElementById("wc-img-related-2").alt = 'Webcam ' + curr_wc.original_name;
+            }
+            document.getElementById("wc-title-related-2").innerHTML = curr_wc.original_name;
+        }
+        
+        if (curr_wc.name === "niu-aliga") {
+        
+            let initial_url = WC_BASE_DOMAIN + curr_wc.imgs[curr_wc.imgs.length-1].path;
+            if (document.getElementById("wc-img-related-3").src !== initial_url) {
+                document.getElementById("wc-img-related-3").src = initial_url;
+                document.getElementById("wc-img-related-3").alt = 'Webcam ' + curr_wc.original_name;
+            }
+            document.getElementById("wc-title-related-3").innerHTML = curr_wc.original_name;
+        }
+    }
+}
+selectWCRelated()
+</script></p>
 		</div>
 	</article>
 </main>

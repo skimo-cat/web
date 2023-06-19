@@ -11,12 +11,12 @@
 <meta property="og:description" content="Consulta les ultimes 24h de la webcam Porté-Puymorens (La Vignole)!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://skimo.cat/webcams-pirineu/porte-la-vignole/" /><meta property="article:section" content="webcams-pirineu" />
-<meta property="article:published_time" content="2022-04-29T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-04-29T00:00:00+00:00" />
+<meta property="article:published_time" content="2022-06-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-06-30T00:00:00+00:00" />
 
 		<meta itemprop="name" content="Webcam Porté-Puymorens (La Vignole)">
-<meta itemprop="description" content="Consulta les ultimes 24h de la webcam Porté-Puymorens (La Vignole)!"><meta itemprop="datePublished" content="2022-04-29T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2022-04-29T00:00:00+00:00" />
+<meta itemprop="description" content="Consulta les ultimes 24h de la webcam Porté-Puymorens (La Vignole)!"><meta itemprop="datePublished" content="2022-06-30T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-06-30T00:00:00+00:00" />
 <meta itemprop="wordCount" content="14">
 <meta itemprop="keywords" content="" />
 		<meta name="twitter:card" content="summary"/>
@@ -250,6 +250,9 @@ function loadWebcams() {
         selectWC("porte-la-vignole");
         document.getElementById('wc-selector').value = "porte-la-vignole";
         
+        if (selectWCRelated !== undefined) {
+            selectWCRelated();
+        }
 
 	})
 	.catch(err => {
@@ -257,6 +260,7 @@ function loadWebcams() {
         throw err;
     });
 }
+selectWCRelated = undefined;
 loadWebcams();
 
 function selectWC(name) {
