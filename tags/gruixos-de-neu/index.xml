@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gruixos de neu on skimo.cat | Esquí de muntanya al Pirineu</title><link>https://skimo.cat/tags/gruixos-de-neu/</link><description>Recent content in Gruixos de neu on skimo.cat | Esquí de muntanya al Pirineu</description><generator>Hugo -- gohugo.io</generator><language>ca</language><lastBuildDate>Sun, 26 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://skimo.cat/tags/gruixos-de-neu/index.xml" rel="self" type="application/rss+xml"/><item><title>Gruixos de neu</title><link>https://skimo.cat/gruix-de-neu-pirineu/</link><pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate><guid>https://skimo.cat/gruix-de-neu-pirineu/</guid><description>Gruix de neu Increment 24h Increment 7 dies Increment anual Carregant... Dades de les estacions automàtiques del meteocat (XEMA)</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gruixos De Neu on skimo.cat | Esquí de muntanya al Pirineu</title><link>https://skimo.cat/tags/gruixos-de-neu/</link><description>Recent content in Gruixos De Neu on skimo.cat | Esquí de muntanya al Pirineu</description><generator>Hugo</generator><language>ca</language><lastBuildDate>Sun, 26 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://skimo.cat/tags/gruixos-de-neu/index.xml" rel="self" type="application/rss+xml"/><item><title>Gruixos de neu</title><link>https://skimo.cat/gruix-de-neu-pirineu/</link><pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate><guid>https://skimo.cat/gruix-de-neu-pirineu/</guid><description>&lt;link href="https://skimo.cat/css/style_gruixneu.css" rel="stylesheet" media="all" />
+ &lt;div id="container">
+ &lt;table>
+ &lt;thead>
+ &lt;th>&lt;/th>
+ &lt;th>Gruix de neu&lt;/th>
+ &lt;th>Increment 24h&lt;/th>
+ &lt;th>Increment 7 dies&lt;/th>
+ &lt;th>Increment anual&lt;/th>
+ &lt;/thead>
+ &lt;tbody id="gruixos_table_body">
+ &lt;tr>
+ &lt;th>Carregant...&lt;/th>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+ &lt;/table>
+ &lt;p class="gruixneu-footer">Dades de les estacions automàtiques del meteocat (&lt;a target="_blank" href="https://www.meteo.cat/observacions/xema">XEMA&lt;/a>)&lt;/p></description></item></channel></rss>

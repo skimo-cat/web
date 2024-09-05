@@ -1,1 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Allaus on skimo.cat | Esquí de muntanya al Pirineu</title><link>https://skimo.cat/tags/allaus/</link><description>Recent content in Allaus on skimo.cat | Esquí de muntanya al Pirineu</description><generator>Hugo -- gohugo.io</generator><language>ca</language><lastBuildDate>Sun, 26 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://skimo.cat/tags/allaus/index.xml" rel="self" type="application/rss+xml"/><item><title>Perill d'allaus al Pirineu</title><link>https://skimo.cat/perill-allaus-pirineu-bpa/</link><pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate><guid>https://skimo.cat/perill-allaus-pirineu-bpa/</guid><description>Catalunya Andorra França VEURE PERILL D'ALLAUS A FRANÇA Val d&amp;rsquo;Aran Aragó</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Allaus on skimo.cat | Esquí de muntanya al Pirineu</title><link>https://skimo.cat/tags/allaus/</link><description>Recent content in Allaus on skimo.cat | Esquí de muntanya al Pirineu</description><generator>Hugo</generator><language>ca</language><lastBuildDate>Sun, 26 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://skimo.cat/tags/allaus/index.xml" rel="self" type="application/rss+xml"/><item><title>Perill d'allaus al Pirineu</title><link>https://skimo.cat/perill-allaus-pirineu-bpa/</link><pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate><guid>https://skimo.cat/perill-allaus-pirineu-bpa/</guid><description>&lt;h2 id="catalunya">Catalunya&lt;/h2>
+&lt;iframe style="width: 100%; height: 600px;" src="https://bpa.icgc.cat/?lg=ca&amp;amp;em=1">&lt;/iframe>
+&lt;h2 id="andorra">Andorra&lt;/h2>
+&lt;iframe style="width: 100%; height: 600px;" src="https://www.meteo.ad/estatneu">&lt;/iframe>
+&lt;h2 id="frança">França&lt;/h2>
+
+
+
+ 
+
+
+&lt;style>
+a.markdown-btn {
+ 
+ font-size: inherit;
+ font-family: inherit;
+ color: var(--font-color);
+ background-color: #e9ecef;
+ border-radius: $border-radius;
+ text-align: center;
+ padding: 5px 1em 5px 1em;
+ text-decoration: none;
+ border: none;
+ cursor: pointer;
+
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 40%;
+
+ 
+ 
+}
+
+a.markdown-btn:active {
+ background-color: #bbbbbb;
+ color: var(--bg-color);
+}
+
+a.markdown-btn:hover {
+ text-decoration: none;
+ background-color: #bbbbbb;
+ color: var(--bg-color);
+}
+
+&lt;/style>
+&lt;a href="https://meteofrance.com/meteo-montagne/pyrenees/risques-avalanche" target="_blank" rel="noreferrer" class="markdown-btn">VEURE PERILL D'ALLAUS A FRANÇA&lt;/a>
+&lt;h2 id="val-daran">Val d&amp;rsquo;Aran&lt;/h2>
+&lt;iframe style="width: 100%; height: 600px;" src="https://lauegi.report/bulletin/latest">&lt;/iframe>
+&lt;h2 id="aragó">Aragó&lt;/h2>
+&lt;iframe style="width: 100%; height: 600px;" src="https://www.aemet.es/documentos/es/eltiempo/prediccion/montana/boletin_peligro_aludes/BPA_Pirineo_Nav_Ara.pdf">&lt;/iframe></description></item><item><title>Perill d'allaus: Eines per preparar una sortida d'esquí de muntanya</title><link>https://skimo.cat/blog/preparar-sortida-perill-allaus/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://skimo.cat/blog/preparar-sortida-perill-allaus/</guid><description>&lt;p>Les allaus són un dels principals perills per la pràctica de l&amp;rsquo;esquí de muntanya, per tant, és important portar sempre el material de seguretat (DVA, pala i sonda) i saber fer-lo servir. Igual d&amp;rsquo;important és planificar l&amp;rsquo;activitat que volem fer, tenint en compte les condicions de la neu, i en funció del risc adaptar-la o canviar-la. En aquests article presentem eines útils per fer aquesta planificació. Recordem que per practicar l&amp;rsquo;esquí de muntanya amb seguretat és molt recomanable fer algun curs especialitzat en allaus (per exemple, l&amp;rsquo;&lt;a href="https://www.acna.cat/formacio/seguretat-en-terreny-allaus-sta-nivell-1/">STA-1 de l&amp;rsquo;ACNA&lt;/a>).&lt;/p></description></item></channel></rss>

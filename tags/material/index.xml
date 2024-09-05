@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Material on skimo.cat | Esquí de muntanya al Pirineu</title>
+    <link>http://localhost:1313/tags/material/</link>
+    <description>Recent content in Material on skimo.cat | Esquí de muntanya al Pirineu</description>
+    <generator>Hugo</generator>
+    <language>ca</language>
+    <atom:link href="http://localhost:1313/tags/material/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Piolets lleugers per esquí de muntanya</title>
+      <link>http://localhost:1313/blog/piolets-lleugers-esqui-muntanya/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/piolets-lleugers-esqui-muntanya/</guid>
+      <description>&lt;p&gt;Piolets lleugers per esquí de muntanya: llistat de piolets lleugers adequats per la pràctica d&amp;rsquo;equí de muntanya. Tot i que s&amp;rsquo;intenta que les dades estiguin actualitzades, no podem garantir que la informació sigui 100% correcta.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
