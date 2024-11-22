@@ -18,4 +18,57 @@
  &lt;/tr>
  &lt;/tbody>
  &lt;/table>
- &lt;p class="gruixneu-footer">Dades de les estacions automàtiques del meteocat (&lt;a target="_blank" href="https://www.meteo.cat/observacions/xema">XEMA&lt;/a>)&lt;/p></description></item></channel></rss>
+ &lt;p class="gruixneu-footer">Dades de les estacions automàtiques del meteocat (&lt;a target="_blank" href="https://www.meteo.cat/observacions/xema">XEMA&lt;/a>)&lt;/p>
+ &lt;/div>
+
+ &lt;script type="text/javascript">
+ function make_cell(curr_obj, key) {
+ let html = '';
+ html += '&lt;td'
+ if (curr_obj[key] > 20) {
+ html += ' class="cell_increment_fort"';
+ } else if (curr_obj[key] > 10) {
+ html += ' class="cell_increment_mig"';
+ } else if (curr_obj[key] > 0) {
+ html += ' class="cell_increment_baix"';
+ } else if (curr_obj[key] &lt; -20) {
+ html += ' class="cell_decrement_fort"';
+ } else if (curr_obj[key] &lt; -10) {
+ html += ' class="cell_decrement_mig"';
+ } else if (curr_obj[key] &lt; 0) {
+ html += ' class="cell_decrement_baix"';
+ }
+ html += '>'
+ html += ((curr_obj[key] > 0) ? '+' : '')
+ if (curr_obj[key] === undefined) {
+ html += 'n/d';
+ } else {
+ html += curr_obj[key];
+ }
+ html += '&lt;/td>';
+ return html;
+ }
+
+ fetch("https://data.skimo.cat/increment.json")
+ .then(res => res.json())
+ .then((out) => {
+ let increment = out;
+ let html="";
+ for (let i=0; i&lt;Object.keys(increment).length; i++) {
+ let curr_obj = increment[Object.keys(increment)[i]];
+ html += '&lt;tr>';
+
+ html += '&lt;th>' + curr_obj['name'] + '&lt;/th>';
+ html += '&lt;td>' + curr_obj['gruix'] + '&lt;/td>';
+ html += make_cell(curr_obj, 'yesterday');
+ html += make_cell(curr_obj, 'week_ago');
+ html += make_cell(curr_obj, 'year_ago');
+ 
+ 
+
+ html += '&lt;/tr>';
+ }
+ document.getElementById('gruixos_table_body').innerHTML = html;
+ })
+ .catch(err => { throw err });
+ &lt;/script></description></item></channel></rss>
